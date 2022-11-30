@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@2.2.0
 executors:
+  steps: -checkout
   with-chrome:
     resource_class: small
     docker:
