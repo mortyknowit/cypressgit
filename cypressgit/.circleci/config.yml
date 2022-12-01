@@ -13,7 +13,8 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
-          executor: with-chrome
+          executor: cypress_image
+          spec: "/cypressgit/cypress/integration/specs/*"
           browser: chrome
           post-steps:
             - run: ls
