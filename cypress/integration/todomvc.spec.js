@@ -1,5 +1,5 @@
-/// <reference types="cypress" />
-
-it("should navigate to the TodoMVC app", () => {
-  cy.visit("http://localhost:8080");
+describe("home page", () => {
+  it("the h1 contains the correct text", () => {
+    cy.visit("https://example.cypress.io");
+  });
 });
