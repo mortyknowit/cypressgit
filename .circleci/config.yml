@@ -16,7 +16,6 @@ workflows:
           executor: with-chrome
           browser: chrome
           post-steps:
-            - run: ls
             - store_test_results:
                 path: /root/project/cypress/results
             - store_artifacts:
