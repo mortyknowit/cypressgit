@@ -14,7 +14,8 @@ workflows:
           requires:
             - cypress/install
           executor: cypress_image
-          spec: "/cypressgit/cypress/integration/specs/*"
+          spec: "/cypressgit/cypress/integration/*"
+          command: ‘cd cypressgit/cypress && npx cypress run’
           browser: chrome
           post-steps:
             - run: ls
